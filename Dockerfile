@@ -8,6 +8,7 @@ RUN apk add --no-cache --virtual .gyp \
         nano \
         dpkg \
         wget \
+        bash \
         mysql-client
 RUN npm install ws mysql
 
