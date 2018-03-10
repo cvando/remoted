@@ -6,7 +6,6 @@ RUN apk add --no-cache --virtual .gyp \
         g++ \
         bc \
         nano \
-        dpkg \
         wget \
         bash \
         mysql-client
