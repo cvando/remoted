@@ -9,9 +9,8 @@ RUN apk add --no-cache --virtual .gyp \
         dpkg \
         wget \
         mysql-client
-    && npm install \
-        [ ws,mysql] \
-    && apk del .gyp
+RUN npm install \
+        [ ws,mysql]
 
 # Create app directory
 WORKDIR /etc/remoted
