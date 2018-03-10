@@ -1,4 +1,4 @@
-FROM node:boron
+FROM node:8
 
 # Create app directory
 WORKDIR /etc/remoted
