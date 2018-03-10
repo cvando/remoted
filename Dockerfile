@@ -8,7 +8,8 @@ RUN apk add --no-cache --virtual .gyp \
         nano \
         wget \
         bash \
-        mysql-client
+        mysql-client \
+        paxctl && paxctl -cm `which node` && apk del --no-cache paxctl
 RUN npm install ws mysql
 
 # Create app directory
