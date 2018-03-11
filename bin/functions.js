@@ -3,7 +3,7 @@ var midldir= "/etc/remoted/bin";
 var logs= "/etc/remoted/logs";
 
 	exports.wget = function (alink){
-		var cmd = "bash "+midldir+'/wget.sh \" '+ alink +'\" 0<&- &>>'+logs+'/logs.log &'
+		var cmd = midldir+'/wget.sh \" '+ alink +'\" &>>'+logs+'/logs.log &'
 		exec(cmd, function(error, stdout, stderr) {
 			console.log(error + stdout + stderr);
 		});
